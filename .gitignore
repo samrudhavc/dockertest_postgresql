@@ -1,0 +1,17 @@
+# Python bytecode files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Docker files
+*.log
+docker-compose.override.yml
+*.env
+.docker/
+*.swp
+*.swo
+
+# Docker images/containers/volumes
+docker-compose.yml
+*.dockerfile
