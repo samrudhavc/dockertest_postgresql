@@ -1,3 +1,17 @@
-my_docker_tester/lib/python3.12/site-packages/sqlparse/filters/__pycache__/
+# Python bytecode files
+*.pyc
+*.pyo
+*.pyd
 __pycache__/
-.env
+
+# Docker files
+*.log
+docker-compose.override.yml
+*.env
+.docker/
+*.swp
+*.swo
+
+# Docker images/containers/volumes
+docker-compose.yml
+*.dockerfile
