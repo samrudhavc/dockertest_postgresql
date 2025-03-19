@@ -1,7 +1,77 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Aquarium Fish for Sale</title>
+</head>
 <body>
-    <h2>Welcome to the Dashboard</h2>
-    <p>Hello, {{ user.username }}!</p>
-    <a href="{% url 'logout' %}">Logout</a>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="#">Dashboard</a> | 
+        <a href="#">Fish Listings</a> | 
+        <a href="#">Categories</a> | 
+        <a href="#">Contact Us</a>
+    </div>
+
+    <!-- Dashboard Container -->
+    <div class="dashboard-container">
+        <h2>Welcome to the Dashboard</h2>
+        <p class="greeting">Hello, {{ user.username }}! Welcome to your aquarium fish store dashboard.</p>
+
+        <!-- Fish Categories Section -->
+        <div class="fish-categories">
+            <div class="category-card">
+                <img src="https://via.placeholder.com/200" alt="Freshwater Fish">
+                <h3>Freshwater Fish</h3>
+                <a href="#">View Listings</a>
+            </div>
+
+            <div class="category-card">
+                <img src="https://via.placeholder.com/200" alt="Saltwater Fish">
+                <h3>Saltwater Fish</h3>
+                <a href="#">View Listings</a>
+            </div>
+
+            <div class="category-card">
+                <img src="https://via.placeholder.com/200" alt="Aquarium Accessories">
+                <h3>Aquarium Accessories</h3>
+                <a href="#">View Listings</a>
+            </div>
+        </div>
+
+        <!-- Fish Listings Section -->
+        <div class="fish-listings">
+            <!-- Placeholder for fish listings (you can fetch these from the Django REST API) -->
+            <div class="fish-card">
+                <img src="https://via.placeholder.com/250" alt="Fish 1">
+                <h4>Fish 1</h4>
+                <p>Beautiful freshwater fish</p>
+                <div class="price">$20</div>
+                <a href="#">Buy Now</a>
+            </div>
+
+            <div class="fish-card">
+                <img src="https://via.placeholder.com/250" alt="Fish 2">
+                <h4>Fish 2</h4>
+                <p>Rare saltwater fish</p>
+                <div class="price">$35</div>
+                <a href="#">Buy Now</a>
+            </div>
+
+            <div class="fish-card">
+                <img src="https://via.placeholder.com/250" alt="Fish 3">
+                <h4>Fish 3</h4>
+                <p>Exotic fish with vibrant colors</p>
+                <div class="price">$25</div>
+                <a href="#">Buy Now</a>
+            </div>
+        </div>
+
+        <!-- Logout Button -->
+        <a class="logout-button" href="{% url 'logout' %}">Logout</a>
+    </div>
+
 </body>
 </html>
