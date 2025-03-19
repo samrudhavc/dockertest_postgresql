@@ -1,0 +1,145 @@
+/* General Layout */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #2d3e50;
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    background-color: #4CAF50;
+    border-radius: 5px;
+}
+
+/* Dashboard Main Section */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.greeting {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.fish-categories {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    width: 100%;
+    gap: 30px;
+}
+
+.category-card {
+    background-color: #fff;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.category-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.category-card h3 {
+    font-size: 22px;
+    color: #2d3e50;
+    margin-top: 15px;
+}
+
+.category-card a {
+    display: inline-block;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.category-card a:hover {
+    background-color: #45a049;
+}
+
+/* Fish Listings Section */
+.fish-listings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.fish-card {
+    background-color: #fff;
+    width: 250px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.fish-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.fish-card h4 {
+    font-size: 18px;
+    margin: 10px;
+}
+
+.fish-card p {
+    font-size: 14px;
+    color: #777;
+    margin: 10px 0;
+}
+
+.fish-card .price {
+    font-size: 16px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.logout-button {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.logout-button:hover {
+    background-color: #e60000;
+}
