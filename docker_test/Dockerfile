@@ -4,6 +4,15 @@ FROM python:3.12
 # Set the working directory
 WORKDIR /app
 
+# Install Node.js and npm
+RUN apt-get update && \
+    apt-get install -y curl gnupg2 lsb-release ca-certificates && \
+    curl -sL https://deb.nodesource.com/setup_16.x | bash - && \
+    apt-get install -y nodejs
+
+# Install create-react-app globally (optional)
+RUN npm install -g create-react-app
+
 # Copy the requirements.txt file into the container
 COPY requirements.txt /app/
 

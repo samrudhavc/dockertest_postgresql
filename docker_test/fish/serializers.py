@@ -1,16 +1,12 @@
 from rest_framework import serializers
-from fish.models import Fish, Category
+from .models import Category, Fish
 
-# Serializer for Category
 class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
-        fields = ['id', 'name', 'description', 'image']
+        fields = ['id', 'name', 'description']  # ← exclude 'image'
 
-# Serializer for Fish
 class FishSerializer(serializers.ModelSerializer):
-    category = CategorySerializer()  # Nested Category data
-
     class Meta:
         model = Fish
-        fields = ['id', 'name', 'description', 'price', 'category', 'image', 'created_at']
+        fields = '__all__'
