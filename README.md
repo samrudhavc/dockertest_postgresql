@@ -37,5 +37,5 @@ To set up the project locally, follow these steps:
 
 1. **Clone the Repository**:  
    ```bash  
-   git clone https://github.com/samrudhavc/PetSpotter.git  
-   cd PetSpotter  
+   https://github.com/samrudhavc/dockertest_postgresql.git  
+   cd dockertest_postgresql  
